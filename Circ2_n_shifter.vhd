@@ -52,4 +52,6 @@ begin
          o_OUT <= w_THREE;
       end if;
    end process;
+   -- o_OUT <= i_A(p_WIDTH-1 downto p_SHIFT) & (others => '0'); left shift
+   -- TODO Relatar a comparação entre as implementações
 end architecture;
