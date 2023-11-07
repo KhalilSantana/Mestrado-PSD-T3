@@ -90,6 +90,6 @@ begin
       o_OUT => w_SHR_7_out
    );
    w_ADDER_BOTTOM_LEFT <= std_logic_vector(unsigned(i_C) + unsigned(w_SHR_7_out));
-   w_ADDER_BOTTOM      <= std_logic_vector(unsigned(w_ADDER_BOTTOM_LEFT) + 33); -- TODO Figure out why this is 33 not 32
+   w_ADDER_BOTTOM      <= std_logic_vector(unsigned(w_ADDER_BOTTOM_LEFT) + 32); -- TODO Figure out why this is 33 not 32
    o_F                 <= w_ADDER_BOTTOM;
 end architecture;
