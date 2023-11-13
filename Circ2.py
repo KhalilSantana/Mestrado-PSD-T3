@@ -1,4 +1,6 @@
-C = 94
+import sys
+
+C=int(sys.argv[1])
 
 SHL_6 = C << 6
 SHL_5 = C << 5
