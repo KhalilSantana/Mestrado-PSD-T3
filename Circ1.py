@@ -1,6 +1,8 @@
-R=255
-G=0
-B=0
+import sys
+
+R=int(sys.argv[1])
+G=int(sys.argv[2])
+B=int(sys.argv[3])
 
 C=255-R
 M=255-G
@@ -19,4 +21,4 @@ M=M-min_btm
 Y=Y-min_btm
 K=min_btm
 
-print("CMYK({},{},{},{})".format(C,Y,M,K))
+print("CMYK({},{},{},{})".format(C,M,Y,K))
